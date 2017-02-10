@@ -16,13 +16,36 @@
         android:text="Hello World!"
         android:id="@+id/textView" />
 
+    <EditText
+        android:id="@+id/emailText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="Enter email address"
+        android:layout_below="@+id/queryButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="43dp" />
+
+    <Button
+        android:id="@+id/queryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:text="Search"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/button"
+        android:layout_marginTop="25dp" />
+
     <Button
         android:text="Button"
         android:onClick="notify"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="139dp"
-        android:id="@+id/button" />
+        android:layout_marginTop="125dp"
+        android:id="@+id/button"
+        android:layout_below="@+id/emailText"
+        android:layout_centerHorizontal="true" />
+
+
 </RelativeLayout>
