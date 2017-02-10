@@ -11,9 +11,11 @@
     tools:context="com.example.luv.med.MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Hello User"
+        android:textAlignment="center"
+        android:textSize="30sp"
         android:id="@+id/textView" />
 
     <EditText
@@ -21,31 +23,30 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
-        android:hint="Enter email address"
-        android:layout_below="@+id/queryButton"
+        android:hint="user id"
         android:layout_alignParentStart="true"
         android:layout_marginTop="43dp" />
 
     <Button
-        android:id="@+id/queryButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end"
-        style="@style/Base.Widget.AppCompat.Button.Borderless"
-        android:text="Search"
-        android:layout_below="@+id/textView"
-        android:layout_alignStart="@+id/button"
-        android:layout_marginTop="25dp" />
-
-    <Button
-        android:text="Button"
-        android:onClick="notify"
+        android:text="Submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="125dp"
         android:id="@+id/button"
         android:layout_below="@+id/emailText"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="login_f" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_marginTop="19dp"
+        android:id="@+id/password"
+        android:layout_below="@+id/emailText"
+        android:layout_alignParentStart="true" />
 
 
 </RelativeLayout>
