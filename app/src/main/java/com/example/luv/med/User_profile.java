@@ -24,9 +24,15 @@ public class User_profile extends AppCompatActivity {
     }
     public void signout(View v )
     {
-        /* user session delete */
         Intent i = new Intent(this,MainActivity.class);
         finish();
         startActivity(i);
     }
+    public void Dosage_Knowledge( View view )
+    {
+        Intent i = new Intent(this,Dosage_Knowledge.class);
+        finish();
+        startActivity(i);
+    }
+
 }

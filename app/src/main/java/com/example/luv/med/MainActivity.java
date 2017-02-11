@@ -25,9 +25,8 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Calendar;
 import java.util.Date;
-
-
-
+import java.util.HashMap;
+import java.util.Map;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -54,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         alarms.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis()+5000, alarmIntent);
     }
     void login_f(View v){
-//        need to verify data api
+//        need to verify data a
         Intent i = new Intent(this , User_profile.class);
         finish();
         startActivity(i);
