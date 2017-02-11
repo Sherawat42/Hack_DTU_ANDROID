@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.luv.med">
 
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
 
     <application
         android:allowBackup="true"
@@ -26,8 +26,16 @@
 
         <activity android:name=".User_profile" />
         <activity android:name=".Appointment" />
+<<<<<<< HEAD
         <activity android:name=".History" />
         <activity android:name=".Dosage_Knowledge"></activity>
+=======
+        <activity android:name=".History"></activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+>>>>>>> d653af486b3fd616c028504f5de873a09997da0a
     </application>
 
 </manifest>
